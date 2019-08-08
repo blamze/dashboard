@@ -92,7 +92,7 @@ function fetchWeather() {
       return response.json()
     }
   ).then(data => {
-    document.getElementById("weather-temp").innerHTML = data.main.temp;
+    document.getElementById("weather-temp").innerHTML = `${data.main.temp}°`;
     document.getElementById("weather-icon").src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     document.getElementById("weather-sunrise").innerHTML = parseTime(data.sys.sunrise*1000);
     document.getElementById("weather-sunset").innerHTML = parseTime(data.sys.sunset*1000);
@@ -125,16 +125,20 @@ function getDate() {
   day = days[day];
   month = months[month];
   document.getElementById("day").innerHTML = day;
-  document.getElementById("date").innerHTML = month + " " + date;
+  document.getElementById("date").innerHTML = `${month} ${date}`;
 }
 
 function initClock() {
   window.setInterval(getTime, 1000);
   window.setInterval(getDate, 1000);
 }
+function initWeather() {
+  fetchWeather();
+  window.setInterval( fetchWeather, 60*60*1000);
+}
 
 $(() => {
-  fetchWeather();
+  initWeather()
   handleBackground();
   initClock();
 })
