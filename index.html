@@ -1,0 +1,111 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <title>Frontend Dashboard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+<div class="background" id="background">
+    <main class="content">
+        <header class="header">
+            <div class="logo-container">
+                <img class="logo" alt="TeleSoftas logo" src="./img/ts-logo.png"/>
+                <div class="logo-header-container">
+                    <h2 class="logo-header-top">Welcome to</h2>
+                    <h2 class="logo-header-bottom">TeleSoftas</h2>
+                </div>
+            </div>
+            <div class="clock-container">
+                <div class="clock-time">
+                    <span id="hours"></span>:<span id="minutes"></span><span class="clock-time-second"
+                                                                             id="seconds"></span>
+                </div>
+                <div class="clock-date"><span id="day"></span>, <span id="date"></span></div>
+            </div>
+        </header>
+        <div class="content-block">
+
+            <div class="events-container">
+                <h3 class="events-container-title">Events</h3>
+                <div class="events-day">
+                    <div class="events-day-title">TODAY</div>
+                    <div class="event-container">
+                        <div class="event-details-container">
+                            <div class="event-time"> 1:00 Pm - 2:00 PM</div>
+                            <div class="event-description">Customer Appreciation BBQ</div>
+                        </div>
+                        <div class="event-location-container">
+                            <div class="event-location-title">Location</div>
+                            <div class="event-location">Conference Room3</div>
+                        </div>
+                    </div>
+                    <div class="event-container">
+                        <div class="event-details-container">
+                            <div class="event-time"> 1:00 Pm - 2:00 PM</div>
+                            <div class="event-description">Customer Appreciation BBQ</div>
+                        </div>
+                        <div class="event-location-container">
+                            <div class="event-location-title">Location</div>
+                            <div class="event-location">Conference Room3</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="events-day">
+                    <div class="events-day-title">TODAY</div>
+                    <div class="event-container">
+                        <div class="event-details-container">
+                            <div class="event-time"> 1:00 Pm - 2:00 PM</div>
+                            <div class="event-description">Customer Appreciation BBQ</div>
+                        </div>
+                        <div class="event-location-container">
+                            <div class="event-location-title">Location</div>
+                            <div class="event-location">Conference Room3</div>
+                        </div>
+                    </div>
+                    <div class="event-container">
+                        <div class="event-details-container">
+                            <div class="event-time"> 1:00 Pm - 2:00 PM</div>
+                            <div class="event-description">Customer Appreciation BBQ</div>
+                        </div>
+                        <div class="event-location-container">
+                            <div class="event-location-title">Location</div>
+                            <div class="event-location">Conference Room3</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="weather-container">
+                <div class="weather-block">
+                    <div class="weather-weather" id="weather-temp"></div>
+                    <img id="weather-icon"/>
+                </div>
+                <div class="weather-block">
+                    <div class="weather-text" id="weather-sunrise"></div>
+                    <img src="./img/sunrise.svg"/>
+                </div>
+                <div class="weather-block">
+                    <div class="weather-text" id="weather-sunset"></div>
+                    <img src="./img/sunset.svg"/>
+                </div>
+            </div>
+        </footer>
+    </main>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
