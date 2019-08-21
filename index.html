@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <meta name="theme-color" content="#fafafa">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 
 <body>
@@ -31,74 +32,99 @@
             </div>
         </header>
         <div class="content-block">
+            <!--            <div class="events-container">-->
+            <!--                <h3 class="events-container-title">Events</h3>-->
+            <!--                <div class="events-day">-->
+            <!--                    <div class="events-day-title">TODAY</div>-->
+            <!--                    <div class="event-container">-->
+            <!--                        <div class="event-details-container">-->
+            <!--                            <div class="event-time"> 1:00 Pm - 2:00 PM</div>-->
+            <!--                            <div class="event-description">Customer Appreciation BBQ</div>-->
+            <!--                        </div>-->
+            <!--                        <div class="event-location-container">-->
+            <!--                            <div class="event-location-title">Location</div>-->
+            <!--                            <div class="event-location">Conference Room3</div>-->
+            <!--                        </div>-->
+            <!--                    </div>-->
+            <!--                    <div class="event-container">-->
+            <!--                        <div class="event-details-container">-->
+            <!--                            <div class="event-time"> 1:00 Pm - 2:00 PM</div>-->
+            <!--                            <div class="event-description">Customer Appreciation BBQ</div>-->
+            <!--                        </div>-->
+            <!--                        <div class="event-location-container">-->
+            <!--                            <div class="event-location-title">Location</div>-->
+            <!--                            <div class="event-location">Conference Room3</div>-->
+            <!--                        </div>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--                <div class="events-day">-->
+            <!--                    <div class="events-day-title">TODAY</div>-->
+            <!--                    <div class="event-container">-->
+            <!--                        <div class="event-details-container">-->
+            <!--                            <div class="event-time"> 1:00 Pm - 2:00 PM</div>-->
+            <!--                            <div class="event-description">Customer Appreciation BBQ</div>-->
+            <!--                        </div>-->
+            <!--                        <div class="event-location-container">-->
+            <!--                            <div class="event-location-title">Location</div>-->
+            <!--                            <div class="event-location">Conference Room3</div>-->
+            <!--                        </div>-->
+            <!--                    </div>-->
+            <!--                    <div class="event-container">-->
+            <!--                        <div class="event-details-container">-->
+            <!--                            <div class="event-time"> 1:00 Pm - 2:00 PM</div>-->
+            <!--                            <div class="event-description">Customer Appreciation BBQ</div>-->
+            <!--                        </div>-->
+            <!--                        <div class="event-location-container">-->
+            <!--                            <div class="event-location-title">Location</div>-->
+            <!--                            <div class="event-location">Conference Room3</div>-->
+            <!--                        </div>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--            </div>-->
 
-            <div class="events-container">
-                <h3 class="events-container-title">Events</h3>
-                <div class="events-day">
-                    <div class="events-day-title">TODAY</div>
-                    <div class="event-container">
-                        <div class="event-details-container">
-                            <div class="event-time"> 1:00 Pm - 2:00 PM</div>
-                            <div class="event-description">Customer Appreciation BBQ</div>
-                        </div>
-                        <div class="event-location-container">
-                            <div class="event-location-title">Location</div>
-                            <div class="event-location">Conference Room3</div>
-                        </div>
-                    </div>
-                    <div class="event-container">
-                        <div class="event-details-container">
-                            <div class="event-time"> 1:00 Pm - 2:00 PM</div>
-                            <div class="event-description">Customer Appreciation BBQ</div>
-                        </div>
-                        <div class="event-location-container">
-                            <div class="event-location-title">Location</div>
-                            <div class="event-location">Conference Room3</div>
+            <div id="slider-container" class="slider-container">
+                <div class="slide">
+                    <div class="slide-container nameday-container">
+                        <h3 class="slide-title">Vardadieniai:</h3>
+                        <div class="slide-card nemeday-card-content">
+                            <script type="text/javascript"
+                                    src="https://day.lt/dienos_vardadieniai?charset=utf"></script>
                         </div>
                     </div>
                 </div>
-                <div class="events-day">
-                    <div class="events-day-title">TODAY</div>
-                    <div class="event-container">
-                        <div class="event-details-container">
-                            <div class="event-time"> 1:00 Pm - 2:00 PM</div>
-                            <div class="event-description">Customer Appreciation BBQ</div>
-                        </div>
-                        <div class="event-location-container">
-                            <div class="event-location-title">Location</div>
-                            <div class="event-location">Conference Room3</div>
-                        </div>
-                    </div>
-                    <div class="event-container">
-                        <div class="event-details-container">
-                            <div class="event-time"> 1:00 Pm - 2:00 PM</div>
-                            <div class="event-description">Customer Appreciation BBQ</div>
-                        </div>
-                        <div class="event-location-container">
-                            <div class="event-location-title">Location</div>
-                            <div class="event-location">Conference Room3</div>
+                <div class="slide">
+                    <div class="slide-container">
+                        <h3 class="slide-title">Dienos patarlė:</h3>
+                        <div class="slide-card">
+                            <script type="text/javascript"
+                                    src="https://day.lt/dienos_info?format=[patarle]&amp;charset=utf"></script>
                         </div>
                     </div>
                 </div>
-
+                <!--                <div class="slide">-->
+                <!--                    <div class="slide-container">-->
+                <!--                        <h3 class="slide-title">Dienos šventė:</h3>-->
+                <!--                        <div class="slide-card">-->
+                <!--                            <script type="text/javascript"-->
+                <!--                                    src="https://day.lt/dienos_info?format=[svente]&amp;charset=utf"></script>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--                </div>-->
             </div>
         </div>
         <footer class="footer">
-            <div class="nameday-container">
-                <script type="text/javascript" src="https://day.lt/dienos_vardadieniai?charset=utf"></script>
-            </div>
             <div class="weather-container">
                 <div class="weather-block">
                     <div class="weather-weather" id="weather-temp"></div>
-                    <img id="weather-icon"/>
+                    <img id="weather-icon" class="weather-main-icon"/>
                 </div>
                 <div class="weather-block">
                     <div class="weather-text" id="weather-sunrise"></div>
-                    <img src="./img/sunrise.svg"/>
+                    <img src="./img/sunrise.svg" class="weather-icon"/>
                 </div>
                 <div class="weather-block">
                     <div class="weather-text" id="weather-sunset"></div>
-                    <img src="./img/sunset.svg"/>
+                    <img src="./img/sunset.svg" class="weather-icon"/>
                 </div>
             </div>
         </footer>
@@ -107,6 +133,7 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 

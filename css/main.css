@@ -79,7 +79,6 @@ body {
 
 /*Main content*/
 .content-block {
-    display: flex;
     flex-grow: 1;
     justify-content: center;
     overflow: hidden;
@@ -138,20 +137,61 @@ body {
 .event-location {
 }
 
-
-/*Footer*/
-.footer {
-}
-.nameday-container{
-    display: flex;
-    justify-content: space-evenly;
+.nameday-container {
     color: transparent;
 }
-.nameday-container a {
+
+.slider-container {
+    display: flex !important;
+    align-items: center;
+    height: 100%;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide-title {
+    color: white;
+}
+
+.slide-card {
+    background: rgba(128, 128, 128, 0.6);
+    padding: 20px 40px 20px 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border-left: 5px solid rgba(255, 104, 0, 0.7);
+    box-sizing: border-box;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.nemeday-card-content {
+    width: 300px;
+}
+
+.nemeday-card-content a {
     font-size: 20px;
     color: white;
     text-decoration: none;
 }
+
+
+/*Footer*/
+.footer {
+}
+
 .weather-block {
     display: flex;
     align-items: center;
@@ -163,9 +203,13 @@ body {
     align-items: center;
 }
 
-.weather-container img {
+.weather-icon {
     width: 100px;
     height: 100px;
+}
+
+.weather-main-icon {
+    transform: scale(1.5);
 }
 
 .weather-weather {
