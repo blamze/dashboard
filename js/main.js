@@ -221,10 +221,16 @@ function loadPoints() {
     })
 }
 
+function handlePoints() {
+    const refreshPointsInterval = 2 * 60 * 60 * 1000;
+    window.setInterval(loadPoints, refreshPointsInterval);
+    loadPoints()
+}
+
 $(() => {
     handleWeather()
     handleBackground();
     handleClock();
     // initSlider();
-    loadPoints()
+    handlePoints()
 })

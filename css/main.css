@@ -143,9 +143,11 @@ body {
 
 .slider-container {
     display: flex !important;
-    align-items: center;
     height: 100%;
     justify-content: space-around;
+
+    /*align-items: center;*/  /*For slider*/
+    align-items: flex-start;
 }
 
 .slide {
@@ -180,7 +182,6 @@ body {
 }
 
 .nemeday-card-content {
-    width: 300px;
 }
 
 .nemeday-card-content a {
