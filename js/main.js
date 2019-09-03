@@ -215,9 +215,16 @@ function initSlider() {
     })
 }
 
+function loadPoints() {
+    $.getJSON('https://api.sheety.co/8d3b57a7-78df-4132-ac4d-b9eb05fd5a3c', data => {
+        $('#points').html(data.map(person => `<div>${person.vardas}  ${person.taskai}</div>`))
+    })
+}
+
 $(() => {
     handleWeather()
     handleBackground();
     handleClock();
     initSlider();
+    loadPoints()
 })

@@ -161,12 +161,13 @@ body {
 }
 
 .slide-title {
+    font-size: 34px;
     color: white;
 }
 
 .slide-card {
     background: rgba(128, 128, 128, 0.6);
-    padding: 20px 40px 20px 10px;
+    padding: 20px 40px;
     margin-bottom: 20px;
     border-radius: 20px;
     border-left: 5px solid rgba(255, 104, 0, 0.7);
@@ -174,7 +175,7 @@ body {
     flex-direction: column;
     display: flex;
     align-items: center;
-    font-size: 20px;
+    font-size: 28px;
 }
 
 .nemeday-card-content {
@@ -182,9 +183,13 @@ body {
 }
 
 .nemeday-card-content a {
-    font-size: 20px;
+    font-size: 30px;
     color: white;
     text-decoration: none;
+}
+.points-wrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 
