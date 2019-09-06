@@ -1,3 +1,7 @@
+Images from https://dakboard.com/app/photos
+
+To deploy: `yarn run deploy`  with Edmundas credentials
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
