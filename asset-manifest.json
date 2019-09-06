@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/dashboard/static/css/main.9ebb05c2.chunk.css",
+    "main.js": "/dashboard/static/js/main.f86194f9.chunk.js",
+    "main.js.map": "/dashboard/static/js/main.f86194f9.chunk.js.map",
+    "runtime~main.js": "/dashboard/static/js/runtime~main.22ea6dda.js",
+    "runtime~main.js.map": "/dashboard/static/js/runtime~main.22ea6dda.js.map",
+    "static/js/2.fddc2a82.chunk.js": "/dashboard/static/js/2.fddc2a82.chunk.js",
+    "static/js/2.fddc2a82.chunk.js.map": "/dashboard/static/js/2.fddc2a82.chunk.js.map",
+    "index.html": "/dashboard/index.html",
+    "precache-manifest.6ecdd4ab9ec5b1260f93e77d71541806.js": "/dashboard/precache-manifest.6ecdd4ab9ec5b1260f93e77d71541806.js",
+    "service-worker.js": "/dashboard/service-worker.js",
+    "static/css/main.9ebb05c2.chunk.css.map": "/dashboard/static/css/main.9ebb05c2.chunk.css.map",
+    "static/media/sunrise.svg": "/dashboard/static/media/sunrise.236b21d1.svg",
+    "static/media/sunset.svg": "/dashboard/static/media/sunset.3d29eaa3.svg",
+    "static/media/ts-logo.png": "/dashboard/static/media/ts-logo.68a3df53.png"
+  }
+}
