@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
-import {Weather, Logo, Clock, FrontendPoints, NameDays, DailyProverb} from './components'
+import {Weather, Logo, Clock, NameDays, DailyProverb} from './components'
 import {backgrounds} from './assets/backgroundsList'
 
 function App() {
@@ -28,7 +28,6 @@ function App() {
                 <div className="content-block">
                     <div id="slider-container" className="slider-container">
                         <div className="slide">
-                            <FrontendPoints/>
                         </div>
                         <div className="slide">
                             <NameDays/>
