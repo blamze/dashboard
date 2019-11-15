@@ -3,6 +3,7 @@
   width: 100vw;
   background-size: cover;
   position: absolute;
+  background-position: center;
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.4);
 }

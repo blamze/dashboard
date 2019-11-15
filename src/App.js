@@ -9,7 +9,7 @@ function App() {
 
         const cycleImages = () => {
             const element = backgrounds[Math.floor(Math.random() * backgrounds.length)];
-            setBackground(`url(${element})`)
+            setBackground(`url(${Math.random() < 0.5 ? element : 'https://source.unsplash.com/1920x1080/?nature,water'})`)
         };
 
         const imageChangeInterval = 10 * 60 * 1000;
