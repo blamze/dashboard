@@ -5,7 +5,7 @@ const months = ["January", "February", "March", "April", "May", "June", "July", 
 
 export class Clock extends React.Component {
     constructor(props) {
-        super(props)
+        super(props);
         const current = new Date();
         this.state = {
             seconds: current.getSeconds(),
@@ -17,9 +17,10 @@ export class Clock extends React.Component {
     }
 
     componentDidMount() {
-        const oneSec = 1000
+        const oneSec = 1000;
+        const threeHours = 3 * 60* 60 * oneSec;
         window.setInterval(this.getTime, oneSec);
-        window.setInterval(this.getDate, oneSec);
+        window.setInterval(this.getDate, threeHours);
     }
 
     getTime = () => {
@@ -39,12 +40,9 @@ export class Clock extends React.Component {
 
     getDate = () => {
         const current = new Date();
-        let day = current.getDay();
-        let month = current.getMonth();
-        let date = current.getDate();
-        day = days[day];
-        month = `${months[month]} ${date}`;
-        this.setState({day, month})
+        let day = days[current.getDay()];
+        let date =  `${months[current.getMonth()]} ${current.getDate()}`;
+        this.setState({day, date})
     }
 
 
